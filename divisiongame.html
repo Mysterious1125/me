@@ -52,6 +52,9 @@
      function v() {
       var Input = document.getElementById('input').value;
       var result =Math.round(n1 / n2)  ;
+       if (Input == " " ) {
+           document.getElementById('result').innerHTML = "Please input your Answer";
+       }
       if (Input == result) {
             document.getElementById('result1').innerHTML = "congratulations"
           } else {
