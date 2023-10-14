@@ -52,12 +52,16 @@
      function v() {
       var Input = document.getElementById('input').value;
       var result = n2 + n1 ;
-      if (Input == result) {
+      if (Input == " " ) {
+           document.getElementById('result').innerHTML = "Please input your Answer";
+       }
+       if (Input == result) {
             document.getElementById('result1').innerHTML = "congratulations";
           } else {
             document.getElementById('result').innerHTML = "Ans =" + " " + result
       + " Better luck next time";
           }
+       
      }
     
      document.getElementById('question').innerHTML = Question;
